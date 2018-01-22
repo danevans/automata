@@ -1,0 +1,22 @@
+{
+  "name": "automata",
+  "version": "0.0.0",
+  "main": "index.js",
+  "author": "Danston Evanshire",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1"
+  },
+  "scripts": {
+    "build": "webpack --progress -p",
+    "watch": "webpack --progress --watch",
+    "server": "webpack-dev-server --open"
+  },
+  "dependencies": {
+    "lit-html": "^0.8.0"
+  }
+}
