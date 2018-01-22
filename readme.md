@@ -2,6 +2,8 @@
 
 This renders a grid of dots populated by characters. Each character is represented by a letter of the alphabet and a color. Every "tick" each character moves in a random direction on the board. When they reach an edge they wrap around to the other side.
 
+See it [here](http://licketyscript.com/automata/).
+
 ## TODO
 
 - characters interacting with each other

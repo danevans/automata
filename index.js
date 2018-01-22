@@ -3,7 +3,7 @@ import Character from './character';
 import { randItem } from './random';
 import Board from './board';
 
-const board = new Board(33, 27);
+const board = new Board(33, 15);
 
 const characters = [
   new Character(randItem(randItem(board.grid)), 'a', 'olive'),
