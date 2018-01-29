@@ -3,13 +3,17 @@ import Character from './character';
 import { randItem } from './random';
 import Board from './board';
 
-const board = new Board(33, 15);
+const board = new Board(33, 25);
+
+const a = new Character(randItem(randItem(board.grid)), 'a', 'olive');
+const b = new Character(randItem(randItem(board.grid)), 'b', 'green', a);
+const c = new Character(randItem(randItem(board.grid)), 'c', 'blue', b);
 
 const characters = [
-  new Character(randItem(randItem(board.grid)), 'a', 'olive'),
-  new Character(randItem(randItem(board.grid)), 'b', 'green'),
-  new Character(randItem(randItem(board.grid)), 'c', 'blue'),
-  new Character(randItem(randItem(board.grid)), 'd', 'maroon'),
+  a,
+  b,
+  c,
+  new Character(randItem(randItem(board.grid)), 'd', 'maroon', c),
   new Character(randItem(randItem(board.grid)), 'e', 'cadetblue'),
   new Character(randItem(randItem(board.grid)), 'f', 'brown'),
   new Character(randItem(randItem(board.grid)), 'g', 'navy'),
@@ -46,7 +50,7 @@ const processTick = () => {
   render(tickTemplate(ticks), tickDiv);
 
   characters.forEach((char) => {
-    char.move(board, board.randomCoords(char.cell));
+    char.move(board);
   });
   ticks++;
 
