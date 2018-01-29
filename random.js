@@ -3,7 +3,7 @@ export function rand(max, min=0) {
 }
 
 export function randBool() {
-  return rand(2) === 1;
+  return randItem([true, false]);
 }
 
 export function randItem(array) {
