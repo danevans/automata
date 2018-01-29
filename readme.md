@@ -9,3 +9,5 @@ See it [here](http://licketyscript.com/automata/).
 - characters interacting with each other
 - characters moving intentionally
 - characters aging and dying
+- impassable obstacles
+- pathfinding
